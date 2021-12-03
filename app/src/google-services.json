@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196152448129",
+    "project_id": "budgetku-106a0",
+    "storage_bucket": "budgetku-106a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196152448129:android:3c5c9146d2dc1bac3de980",
+        "android_client_info": {
+          "package_name": "com.willteksoftwares.personalbudgetingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196152448129-t59frvkmma2b8o7pfiahartgham7qs6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASWRh3xsFKqd6FgVG2R9QioRmBt5lMdHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196152448129-t59frvkmma2b8o7pfiahartgham7qs6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
