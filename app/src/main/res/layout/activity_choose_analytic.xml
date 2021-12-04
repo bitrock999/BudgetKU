@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#808080"
+
     tools:context=".ChooseAnalyticActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000"
+
         android:id="@+id/toolbar"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -19,12 +19,12 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center"
         android:id="@+id/todayCardView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="25dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
@@ -42,12 +42,12 @@
                 android:id="@+id/budgetBtnImageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/today"/>
+                android:src="@drawable/Hari_ini"/>
             <TextView
                 android:id="@+id/homeBtnTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Today Analytics"
+                android:text="Analitik Harian"
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:textAlignment="center"/>
@@ -60,7 +60,7 @@
         android:id="@+id/weekCardView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="25dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
@@ -78,12 +78,12 @@
                 android:id="@+id/weekBtnImageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/week"/>
+                android:src="@drawable/minggu_ini"/>
             <TextView
                 android:id="@+id/weekBtnTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Week Analytics"
+                android:text="Analitik Mingguan"
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:textAlignment="center"/>
@@ -96,7 +96,7 @@
         android:id="@+id/monthCardView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="25dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
@@ -114,12 +114,12 @@
                 android:id="@+id/monthBtnImageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/month"/>
+                android:src="@drawable/calendar"/>
             <TextView
                 android:id="@+id/monthBtnTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Monthly Analytics"
+                android:text="Analitik Bulanan"
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:textAlignment="center"/>

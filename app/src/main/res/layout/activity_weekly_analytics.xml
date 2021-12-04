@@ -16,7 +16,7 @@
             android:id="@+id/my_Feed_Toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#000"
+            android:background="@color/GojekGreen"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
@@ -26,16 +26,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Total Spending: 00.00"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:layout_marginTop="5dp"/>
+            android:background="@drawable/my_shape_file"
+           />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/boarder_black"
+
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="0dp"
@@ -110,7 +111,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Transport"
+                            android:text="Transportasi"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -150,7 +151,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -158,11 +159,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_transport"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout"
+                        android:src="@drawable/bus" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -180,7 +184,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Food"
+                            android:text="Makanan"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -220,7 +224,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -228,11 +232,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_food"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout1"
+                        android:src="@drawable/makan" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -250,7 +257,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="House Expenses"
+                            android:text="Kebutuhan Rumah"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -290,7 +297,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
                             />
@@ -303,7 +310,7 @@
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="10dp"
                         android:layout_toEndOf="@+id/linearLayout2"
-                        android:src="@drawable/ic_house" />
+                        android:src="@drawable/rumah" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -321,7 +328,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Entertainment"
+                            android:text="Hiburan"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -361,7 +368,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -369,11 +376,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout3"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_entertainment"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout3"
+                        android:src="@drawable/vids" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -391,7 +401,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Education"
+                            android:text="Pendidikan"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -431,7 +441,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -439,11 +449,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout4"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_education"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout4"
+                        android:src="@drawable/books" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -461,7 +474,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Charity"
+                            android:text="Amal"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -484,7 +497,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="2"
-                                android:text="status"
+                                android:text="Lainnya"
                                 android:textSize="12sp"
                                 android:textColor="#000"
                                 android:id="@+id/progress_ratio_cha"
@@ -501,7 +514,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -509,11 +522,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout5"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_consultancy"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout5"
+                        android:src="@drawable/love" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -531,7 +547,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Apparel and Services"
+                            android:text="Sandang"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -571,7 +587,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -579,11 +595,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout6"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_shirt"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout6"
+                        android:src="@drawable/cloth" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -601,7 +620,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Health"
+                            android:text="Kesehatan"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -642,7 +661,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -650,11 +669,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout7"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_health"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout7"
+                        android:src="@drawable/drugs" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -672,7 +694,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Personal Expenses"
+                            android:text="Kebutuhan Pribadi"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:textSize="18sp"
@@ -712,7 +734,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -720,11 +742,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout8"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_personalcare"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout8"
+                        android:src="@drawable/man" />
 
                 </RelativeLayout>
                 <RelativeLayout
@@ -784,7 +809,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="This week"
+                            android:text="Minggu Ini"
                             android:textSize="12sp"
                             android:textColor="#000"
 
@@ -792,11 +817,14 @@
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_toEndOf="@+id/linearLayout9"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_other"
-                        android:layout_margin="10dp"/>
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/linearLayout9"
+                        android:src="@drawable/more" />
                 </RelativeLayout>
 
                 <com.anychart.AnyChartView

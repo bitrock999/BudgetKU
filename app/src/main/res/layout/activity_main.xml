@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgimage"
+
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#000"
-        android:id="@+id/toolbar"
+        android:background="@color/GojekGreen"
+        android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:elevation="4dp">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -24,7 +24,11 @@
         android:layout_gravity="center_horizontal"
         android:paddingHorizontal="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape_file"
+
+        >
+
 
         <TableRow >
             <TextView
@@ -35,7 +39,6 @@
                 android:textColor="#fff"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:background="@drawable/borders"
                 android:padding="5dp"
                 android:textSize="12dp"/>
 
@@ -43,46 +46,46 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Today"
+                android:text="Harian"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
                 android:textStyle="bold"
-                android:background="@drawable/borders"
+
                 android:textSize="12dp"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Week"
+                android:text="Mingguan"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
                 android:textStyle="bold"
-                android:background="@drawable/borders"
+
                 android:textSize="12dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Month"
+                android:text="Bulanan"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
                 android:textStyle="bold"
-                android:background="@drawable/borders"
+
                 android:textSize="12dp"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Savings"
+                android:text="Simpanan"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
                 android:textStyle="bold"
-                android:background="@drawable/borders"
+
                 android:textSize="12dp"/>
         </TableRow>
 
@@ -92,11 +95,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ksh 0"
+                android:text="Rp0"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
-                android:background="@drawable/borders"
                 android:textSize="12dp"/>
 
             <TextView
@@ -104,11 +106,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ksh 0"
+                android:text="Rp 0"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
-                android:background="@drawable/borders"
                 android:textSize="12dp"/>
 
             <TextView
@@ -116,11 +117,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ksh 0"
+                android:text="Rp0"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
-                android:background="@drawable/borders"
                 android:textSize="12dp"/>
 
             <TextView
@@ -128,11 +128,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ksh 0"
+                android:text="Rp0"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
-                android:background="@drawable/borders"
                 android:textSize="12dp"/>
 
             <TextView
@@ -140,69 +139,68 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ksh 0"
+                android:text="Rp0"
                 android:textColor="#fff"
                 android:gravity="center"
                 android:padding="5dp"
-                android:background="@drawable/borders"
                 android:textSize="12dp"/>
         </TableRow>
     </TableLayout>
 
 
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator_layout"
-        android:layout_below="@+id/titles_table"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titles_table">
 
         <GridLayout
             android:id="@+id/grid_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="400dp"
             android:layout_below="@+id/linerLayout2"
-            android:rowCount="3"
-            android:columnCount="2"
-            android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginBottom="20dp"
+            android:columnCount="2"
+            android:rowCount="3">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/homeBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
-                android:layout_column="0"
-                android:layout_gravity="fill"
                 android:layout_rowWeight="1"
+                android:layout_column="0"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
                 android:background="#fff"
-                >
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/homeBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/budget"/>
+                        android:src="@drawable/Home" />
+
                     <TextView
                         android:id="@+id/homeBtnTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="My Budget"
-                        android:textStyle="bold"
+                        android:text="Budget Saya"
+                        android:textAlignment="center"
                         android:textColor="#000"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -211,35 +209,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
-                android:layout_column="1"
-                android:layout_gravity="fill"
                 android:layout_rowWeight="1"
+                android:layout_column="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
                 android:background="#fff"
-                >
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/todayBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/today"/>
+                        android:src="@drawable/Hari_ini" />
+
                     <TextView
                         android:id="@+id/todayBtnTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Today"
-                        android:textStyle="bold"
+                        android:text="Hari Ini"
+                        android:textAlignment="center"
                         android:textColor="#000"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -248,35 +247,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
-                android:layout_column="0"
-                android:layout_gravity="fill"
                 android:layout_rowWeight="1"
+                android:layout_column="0"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
                 android:background="#fff"
-                >
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/weekBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/week"/>
+                        android:src="@drawable/minggu_ini" />
+
                     <TextView
                         android:id="@+id/weekBtnTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="This week"
-                        android:textStyle="bold"
+                        android:text="Minggu Ini"
+                        android:textAlignment="center"
                         android:textColor="#000"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -285,35 +285,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
-                android:layout_column="1"
-                android:layout_gravity="fill"
                 android:layout_rowWeight="1"
+                android:layout_column="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
                 android:background="#fff"
-                >
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/monthBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/month"/>
+                        android:src="@drawable/calendar" />
+
                     <TextView
                         android:id="@+id/monthBtnTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="This Month"
-                        android:textStyle="bold"
+                        android:text="Bulan Ini"
+                        android:textAlignment="center"
                         android:textColor="#000"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -322,35 +323,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="2"
-                android:layout_column="0"
-                android:layout_gravity="fill"
                 android:layout_rowWeight="1"
+                android:layout_column="0"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
                 android:background="#fff"
-                >
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/analyticsImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/ic_anaytic"/>
+                        android:src="@drawable/graph" />
+
                     <TextView
                         android:id="@+id/analyticsTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Analytics"
-                        android:textStyle="bold"
+                        android:text="Analytik"
+                        android:textAlignment="center"
                         android:textColor="#000"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -359,33 +361,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="2"
-                android:layout_column="1"
-                android:layout_gravity="fill"
                 android:layout_rowWeight="1"
+                android:layout_column="1"
                 android:layout_columnWeight="1"
+                android:layout_gravity="fill"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
                 android:background="#fff"
-                >
+                app:cardCornerRadius="25dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/ic_history"/>
+                        android:src="@drawable/history" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="History"
-                        android:textStyle="bold"
+                        android:text="Riwayat"
+                        android:textAlignment="center"
                         android:textColor="#000"
-                        android:textAlignment="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -397,11 +400,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-            app:fabSize="normal"
+            android:backgroundTint="@color/GojekGreen"
             android:src="@drawable/ic_add"
-            android:backgroundTint="#000"
-            />
+            app:fabSize="normal" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
 
 </RelativeLayout>

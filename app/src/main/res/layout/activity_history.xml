@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#000"
+
         android:id="@+id/my_Feed_Toolbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -34,8 +34,8 @@
                 android:textColor="#fff"
                 android:layout_margin="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/buttons"
-                android:text="Search "/>
+                android:background="@color/GojekGreen"
+                android:text="Cari "/>
 
             <TextView
                 android:id="@+id/historyTotalAmountSpent"

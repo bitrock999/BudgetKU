@@ -15,7 +15,7 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#000"
+            android:background="@color/GojekGreen"
             android:id="@+id/toolbar"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -25,12 +25,13 @@
             android:id="@+id/totalAmountSpentOn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TotalAmount: $0"
-            android:textColor="#000"
+            android:text="Jumlah Total: $0"
+            android:textColor="#fff"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_margin="5dp"/>
+            android:background="@drawable/my_shape_file"
+            />
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
@@ -54,7 +55,7 @@
                 android:layout_gravity="bottom|end"
                 app:fabSize="normal"
                 android:id="@+id/fab"
-                app:backgroundTint="#000"
+                app:backgroundTint="@color/GojekGreen"
                 android:src="@drawable/ic_add"
                 android:layout_margin="16dp"/>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>

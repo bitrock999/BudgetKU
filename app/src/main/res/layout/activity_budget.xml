@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000"
+        android:background="@color/GojekGreen"
         android:id="@+id/toolbar"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -20,12 +20,12 @@
         android:id="@+id/totalBudgetAmountTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="total Budget amount: $0"
+        android:text="Jumlah Buget Total: Rp0"
         android:textSize="25sp"
-        android:textStyle="bold"
+        android:background="@drawable/my_shape_file"
         android:textAlignment="center"
-        android:textColor="#000"
-        android:layout_marginTop="5dp"/>
+        android:textColor="#ffff"
+        android:layout_marginTop="-2dp"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:layout_gravity="bottom|end"
             app:fabSize="normal"
             android:id="@+id/fab"
-            app:backgroundTint="#000"
+            app:backgroundTint="@color/GojekGreen"
             android:src="@drawable/ic_add"
             android:layout_margin="16dp"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
