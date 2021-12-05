@@ -327,12 +327,12 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
+    /**@Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.account){
             Intent intent  = new Intent(MainActivity.this, AccountActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
