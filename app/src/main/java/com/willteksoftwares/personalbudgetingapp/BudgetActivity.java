@@ -89,7 +89,7 @@ public class BudgetActivity extends AppCompatActivity {
              for (DataSnapshot snap: snapshot.getChildren()){
                  Data data = snap.getValue(Data.class);
                  totalAmount += data.getAmount();
-                 String sTotal = String.valueOf("Month budget: $"+ totalAmount);
+                 String sTotal = String.valueOf("Budget Bulanan: Rp"+ totalAmount);
                  totalBudgetAmountTextView.setText(sTotal);
              }
             }
@@ -251,7 +251,7 @@ public class BudgetActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") final int position, @NonNull final Data model) {
 
-                holder.setItemAmount("Allocated amount: $"+ model.getAmount());
+                holder.setItemAmount("Alokasi Dana: Rp"+ model.getAmount());
                 holder.setDate("On: "+model.getDate());
                 holder.setItemName("BudgetItem: "+model.getItem());
 

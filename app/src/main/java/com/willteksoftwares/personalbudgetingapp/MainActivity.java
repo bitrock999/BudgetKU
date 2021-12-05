@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        monthCardView = findViewById(R.id.monthCardView);
+        /**monthCardView = findViewById(R.id.monthCardView);
         monthCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
         budgetRef.addValueEventListener(new ValueEventListener() {
