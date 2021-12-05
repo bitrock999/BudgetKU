@@ -42,7 +42,7 @@
                 android:id="@+id/budgetBtnImageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/Hari_ini"/>
+                android:src="@drawable/hari_ini"/>
             <TextView
                 android:id="@+id/homeBtnTextView"
                 android:layout_width="wrap_content"

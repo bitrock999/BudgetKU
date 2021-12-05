@@ -191,7 +191,7 @@
                         android:id="@+id/homeBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/Home" />
+                        android:src="@drawable/home" />
 
                     <TextView
                         android:id="@+id/homeBtnTextView"
@@ -229,7 +229,7 @@
                         android:id="@+id/todayBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/Hari_ini" />
+                        android:src="@drawable/hari_ini" />
 
                     <TextView
                         android:id="@+id/todayBtnTextView"
